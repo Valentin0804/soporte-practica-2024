@@ -9,6 +9,15 @@ class Articulo:
         - Utilizar sólamente el constructor (__init__) y un método de
           clase (@classmethod) con una variable de clase
     """
+    _id_incremental = 0
+
+    def __init_ (self, nombre:  str ):
+        self.id = self._generate_id()
+        self.nombre = nombre
+    
+    def _generate_id(cls):
+        cls._id_incremental +=1
+        return cls._id_incremental
 
     # Completar
 

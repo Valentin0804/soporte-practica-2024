@@ -10,8 +10,21 @@ comando (estando parados dentro de la carpeta practico_02):
 $PATH$/practico_02> python -m source.ejercicio_02
 """
 
-# Completar
+# Completar 
+import sys
+import os
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'data')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'config')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'config/db_config')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import  util
+import  database as database
+import  test_config as test_config
+import  migrations as migrations
+import  main
 
 # NO MODIFICAR - INICIO
 assert main.name == "main"

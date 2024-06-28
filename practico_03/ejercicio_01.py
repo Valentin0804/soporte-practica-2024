@@ -4,10 +4,9 @@ from typing import Optional
 
 
 class Rectangulo:
-    """
-    Implementar la clase Rectangulo que contiene una base y una altura, y el
-    método area.
-    """
+    def __init__ (self, base: Optional[float] = 0.0, altura: Optional[float] = 0.0):
+        self.base = base
+        self.altura = altura
     # Completar
 
 

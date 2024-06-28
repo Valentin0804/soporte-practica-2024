@@ -18,7 +18,9 @@ Referencia: https://docs.python.org/3/reference/import.html#the-import-system
 """
 
 # Completar
-
+import main.py as main
+import source.util.py as util
+import source.controller.controller.py as controller
 
 # NO MODIFICAR - INICIO
 assert main.name == "main"
