@@ -14,6 +14,15 @@ class Persona:
     Métodos:
     - es_mayor_edad(): indica si es mayor de edad, devuelve un booleano.
     """
+    def __init__(self, nombre:str, edad:int, sexo:str, peso:float, altura:float):
+        self.nombre = nombre
+        self.edad = edad
+        self.sexo = sexo
+        self.peso = peso
+        self.altura = altura
+
+    def es_mayor_edad(self, edad:int):
+        return edad > 17
 
     # Completar
 
