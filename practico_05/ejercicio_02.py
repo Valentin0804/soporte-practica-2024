@@ -15,7 +15,7 @@ class DatosSocio():
         """Devuelve la instancia del socio, dado su id. Devuelve None si no 
         encuentra nada.
         """
-        pass # Completar
+        return self.session.query(Socio).filter_by(id_socio=id_socio).first()
 
     def buscar_dni(self, dni_socio: int) -> Optional[Socio]:
         """Devuelve la instancia del socio, dado su dni. Devuelve None si no 
